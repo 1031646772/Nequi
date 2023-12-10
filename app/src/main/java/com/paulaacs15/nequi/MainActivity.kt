@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         val mensajito= findViewById<TextView>(R.id.mensaje)
         val boton = findViewById<Button>(R.id.Ingresar)
         val verificar = verificarCadena(contrasena.text.toString())
-
         boton.setOnClickListener {
             if (!verificar) {
                 val nuevoTexto = "La contraseña es netamente numerica"
